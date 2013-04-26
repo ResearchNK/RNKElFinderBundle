@@ -17,7 +17,7 @@
         "symfony/symfony": ">=2.1,<2.2",
         "sensio/framework-extra-bundle": "2.1.*",
         "jms/di-extra-bundle": "1.2.*",
-        "twig/extensions": "*",
+        "twig/extensions": "*"
     },
     "autoload": {
         "psr-0": { "RNK\\ElFinderBundle": "" }
