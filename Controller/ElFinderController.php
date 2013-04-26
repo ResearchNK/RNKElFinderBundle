@@ -23,7 +23,7 @@ class ElFinderController extends Controller
      */
     public function backendAction()
     {
-        $connector = $this->container->get('file_explorer.el_finder_connector');
+        $connector = $this->container->get('rnk_el_finder.connector');
         return $connector->connect();
     }
 }

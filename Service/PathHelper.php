@@ -9,7 +9,7 @@ use Symfony\Component\HttpKernel\Log\LoggerInterface;
 use Symfony\Component\Templating\Helper\CoreAssetsHelper;
 
 /**
- * @DI\Service("file_explorer.path_helper", scope="request")
+ * @DI\Service("rnk_el_finder.path_helper", scope="request")
  */
 class PathHelper
 {

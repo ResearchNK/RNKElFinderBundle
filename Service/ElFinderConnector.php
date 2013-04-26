@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\FileBag;
 use RNK\ElFinderBundle\Exception\ElFinderException;
 
 /**
- * @DI\Service("file_explorer.el_finder_connector", scope="request")
+ * @DI\Service("rnk_el_finder.connector", scope="request")
  */
 class ElFinderConnector
 {
