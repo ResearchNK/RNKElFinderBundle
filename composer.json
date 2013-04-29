@@ -19,7 +19,7 @@
         "twig/extensions": "*"
     },
     "autoload": {
-        "psr-0": { "RNK\\RNKElfinderBundle": "" }
+        "psr-0": { "RNK\\ElfinderBundle": "" }
     },
-    "target-dir": "RNK/RNKElfinderBundle"
+    "target-dir": "RNK/ElfinderBundle"
 }
