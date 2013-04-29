@@ -1,5 +1,5 @@
 {
-    "name": "research-nk/elfinder-bundle",
+    "name": "research-nk/rnk-elfinder-bundle",
     "description": "ElFinderBundle",
     "keywords": ["elfinder","file explorer"],
     "type": "symfony-bundle",
@@ -19,7 +19,7 @@
         "twig/extensions": "*"
     },
     "autoload": {
-        "psr-0": { "RNK\\ElFinderBundle": "" }
+        "psr-0": { "RNK\\RNKElfinderBundle": "" }
     },
-    "target-dir": "RNK/ElFinderBundle"
+    "target-dir": "RNK/RNKElfinderBundle"
 }

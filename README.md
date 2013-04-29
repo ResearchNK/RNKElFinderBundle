@@ -40,7 +40,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new RNK\ElfinderBundle\RNKElfinderBundle(),
+        new RNK\RNKElfinderBundle\RNKElfinderBundle(),
         // ...
     );
 }
