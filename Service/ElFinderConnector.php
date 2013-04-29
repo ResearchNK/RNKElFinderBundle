@@ -1,6 +1,6 @@
 <?php
 
-namespace RNK\RNKElFinderBundle\Service;
+namespace RNK\ElFinderBundle\Service;
 
 require_once __DIR__.'/../elFinder/elFinderVolumeDriver.class.php';
 require_once __DIR__.'/../elFinder/elFinderVolumeLocalFileSystem.class.php';
@@ -10,7 +10,7 @@ require_once __DIR__.'/../elFinder/elFinderConnector.class.php';
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\FileBag;
-use RNK\RNKElFinderBundle\Exception\ElFinderException;
+use RNK\ElFinderBundle\Exception\ElFinderException;
 
 
 class ElFinderConnector

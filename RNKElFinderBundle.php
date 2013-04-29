@@ -1,6 +1,6 @@
 <?php
 
-namespace RNK\RNKElFinderBundle;
+namespace RNK\ElFinderBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
