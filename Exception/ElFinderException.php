@@ -1,6 +1,6 @@
 <?php
 
-namespace RNK\ElFinderBundle\Exception;
+namespace RNK\RNKElFinderBundle\Exception;
 /**
  * Description of ElFinderException
  *

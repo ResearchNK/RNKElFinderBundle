@@ -1,6 +1,6 @@
 <?php
 
-namespace RNK\ElFinderBundle\Controller;
+namespace RNK\RNKElFinderBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;

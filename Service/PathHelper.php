@@ -1,6 +1,6 @@
 <?php
 
-namespace RNK\ElFinderBundle\Service;
+namespace RNK\RNKElFinderBundle\Service;
 
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpFoundation\Request;
