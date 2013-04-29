@@ -1,4 +1,4 @@
 rnk_el_finder:
-    resource: "@RNKElFinderBundleBundle/Controller/"
+    resource: "@RNKElFinderBundle/Controller/"
     type:     annotation
     prefix:   /

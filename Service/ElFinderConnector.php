@@ -26,7 +26,7 @@ class ElFinderConnector
 
   /**
     * @DI\InjectParams({
-    *    "path_helper" = @DI\Inject("file_explorer.path_helper"),
+    *    "path_helper" = @DI\Inject("rnk_el_finder.path_helper"),
     *    "request" = @DI\Inject("request"),
     *    "options" = @DI\Inject("%rnk_el_finder%")
     * })
@@ -50,11 +50,17 @@ class ElFinderConnector
 
       foreach ($parameters['roots'] as $parameter) {
           $path = $parameter['path'];
+          
+          if(isset($parameter['show_hidden_files']) && $parameter['show_hidden_files'])
+            $show_hidden_files = true;
+          else
+            $show_hidden_files = false;
+
           $options['roots'][] = array(
               'driver'        => $parameter['driver'],
               'path'          => $path,
               'URL'           => $this->path_helper->generateAbsoluteFileUrl($path),
-              'accessControl' => array($this, 'access'),
+              'accessControl' => $show_hidden_files ? null : array($this, 'access'),
               'uploadAllow'   => $parameter['upload_allow'],
               'uploadDeny'    => $parameter['upload_deny'],
               'uploadMaxSize' => $parameter['upload_max_size']
