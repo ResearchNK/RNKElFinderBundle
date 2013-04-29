@@ -7,15 +7,12 @@ require_once __DIR__.'/../elFinder/elFinderVolumeLocalFileSystem.class.php';
 require_once __DIR__.'/../elFinder/elFinder.class.php';
 require_once __DIR__.'/../elFinder/elFinderConnector.class.php';
 
-use JMS\DiExtraBundle\Annotation as DI;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\FileBag;
 use RNK\ElFinderBundle\Exception\ElFinderException;
 
-/**
- * @DI\Service("rnk_el_finder.connector", scope="request")
- */
+
 class ElFinderConnector
 {
   protected $path_helper;
@@ -24,13 +21,6 @@ class ElFinderConnector
   protected $elFinder;
   const driver = 'LocalFileSystem';
 
-  /**
-    * @DI\InjectParams({
-    *    "path_helper" = @DI\Inject("rnk_el_finder.path_helper"),
-    *    "request" = @DI\Inject("request"),
-    *    "options" = @DI\Inject("%rnk_el_finder%")
-    * })
-    */
   public function __construct( $path_helper, Request $request, array $options)
   {
     $this->path_helper = $path_helper;

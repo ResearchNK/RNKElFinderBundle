@@ -2,15 +2,10 @@
 
 namespace RNK\ElFinderBundle\Service;
 
-use JMS\DiExtraBundle\Annotation as DI;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\Log\LoggerInterface;
 use Symfony\Component\Templating\Helper\CoreAssetsHelper;
 
-/**
- * @DI\Service("rnk_el_finder.path_helper", scope="request")
- */
 class PathHelper
 {
 
@@ -19,14 +14,7 @@ class PathHelper
   protected $request;
   protected $roots;
 
-  /**
-   * @DI\InjectParams({
-   *    "root_dir" =  @DI\Inject("%kernel.root_dir%"),
-   *    "assets_helper" = @DI\Inject("templating.helper.assets"),
-   *    "request" = @DI\Inject("request"),
-   *    "options" = @DI\Inject("%rnk_el_finder%")
-   * })
-   */
+
   public function __construct(
   $root_dir, CoreAssetsHelper $assets_helper, Request $request, array $options)
   {

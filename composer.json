@@ -16,7 +16,6 @@
         "php": ">=5.3.3",
         "symfony/symfony": ">=2.1,<2.2",
         "sensio/framework-extra-bundle": "2.1.*",
-        "jms/di-extra-bundle": "1.2.*",
         "twig/extensions": "*"
     },
     "autoload": {

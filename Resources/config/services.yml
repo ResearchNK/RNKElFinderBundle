@@ -1,0 +1,17 @@
+services:
+  rnk_el_finder.connector:
+    class: RNK\ElFinderBundle\Service\ElFinderConnector
+    scope: request
+    arguments:
+      - "@rnk_el_finder.path_helper"
+      - "@request"
+      - "%rnk_el_finder%"
+
+  rnk_el_finder.path_helper:
+    class: RNK\ElFinderBundle\Service\PathHelper
+    scope: request
+    arguments:
+      - "%kernel.root_dir%"
+      - "@templating.helper.assets"
+      - "@request"
+      - "%rnk_el_finder%"
