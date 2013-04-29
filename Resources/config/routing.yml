@@ -1,4 +1,7 @@
-rnk_el_finder:
-    resource: "@RNKElFinderBundle/Controller/"
-    type:     annotation
-    prefix:   /
+rnk_el_finder_backend:
+    pattern:  /rnk_el_finder_backend
+    defaults: { _controller: RNKElFinderBundle:ElFinder:backend }
+
+rnk_el_finder_show:
+    pattern: /rnk_el_finder_show
+    defaults: { _controller: RNKElFinderBundle:ElFinder:show }

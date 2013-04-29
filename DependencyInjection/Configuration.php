@@ -24,8 +24,6 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->scalarNode('locale')->defaultValue('en_US.UTF8')->end()
-                ->scalarNode('showhidden')->defaultValue('false')->end()
-                ->scalarNode('relative_path')->defaultValue('false')->end()
             ->end()
         ;
 
