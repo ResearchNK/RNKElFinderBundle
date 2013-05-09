@@ -5,6 +5,7 @@ namespace RNK\ElFinderBundle\Service;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Templating\Helper\CoreAssetsHelper;
+use Symfony\Component\HttpKernel\Log\LoggerInterface;
 
 class PathHelper
 {
@@ -12,15 +13,21 @@ class PathHelper
   protected $root_dir;
   protected $assets_helper;
   protected $request;
+  protected $logger;
   protected $roots;
 
 
   public function __construct(
-  $root_dir, CoreAssetsHelper $assets_helper, Request $request, array $options)
+    $root_dir,
+    CoreAssetsHelper $assets_helper,
+    Request $request,
+    LoggerInterface $logger,
+    array $options)
   {
     $this->root_dir = $root_dir;
     $this->roots = $options['connector']['roots'];
     $this->assets_helper = $assets_helper;
+    $this->logger = $logger;
     $this->request = $request;
   }
 
