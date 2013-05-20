@@ -1,9 +1,9 @@
 {
     "name": "research-nk/rnk-elfinder-bundle",
-    "description": "ElFinderBundle",
+    "description": "El finder connector for Symfony2",
     "keywords": ["elfinder","file explorer"],
     "type": "symfony-bundle",
-    "homepage": "https://github.com/ResearchNK/ElFinderBundle",
+    "homepage": "https://github.com/ResearchNK/RNKElFinderBundle",
     "license": "MIT",
     "minimum-stability": "dev",
     "authors": [
