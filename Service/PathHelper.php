@@ -68,7 +68,9 @@ class PathHelper
         $files[] = $this->generateAbsoluteFileUrl(
                 $root_path . '/' . $file->getRelativePathname());
       }
-      $files = array_combine($files, $files);
+      if(count($files)>0) {
+        $files = array_combine($files, $files);
+      }
     }
     return $files;
   }
