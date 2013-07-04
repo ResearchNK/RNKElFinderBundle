@@ -21,5 +21,6 @@
     "autoload": {
         "psr-0": { "RNK\\ElFinderBundle": "" }
     },
-    "target-dir": "RNK/ElFinderBundle"
+    "target-dir": "RNK/ElFinderBundle",
+    "minimum-stability": "dev"
 }
